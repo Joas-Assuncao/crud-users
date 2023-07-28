@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/users
+    password: masterkey
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
